@@ -1,8 +1,8 @@
--- MariaDB dump 10.19  Distrib 10.5.12-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: GROCERY
 -- ------------------------------------------------------
--- Server version	10.5.12-MariaDB-1
+-- Server version	10.6.15-MariaDB-1:10.6.15+maria~ubu2004
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -29,7 +29,7 @@ CREATE TABLE `entries` (
   `date` varchar(255) DEFAULT NULL,
   `time` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `entries` (
 
 LOCK TABLES `entries` WRITE;
 /*!40000 ALTER TABLE `entries` DISABLE KEYS */;
-INSERT INTO `entries` VALUES (1,'Tejas','3434','09-03-2023','04:05:36 pm'),(2,'Priya','priyak90','09-03-2023','04:08:56 pm'),(3,'Alita','hugo','09-03-2023','04:17:07 pm'),(4,'Tejas','3434','09-03-2023','04:20:52 pm'),(5,'Priya','priyak90','09-03-2023','04:22:10 pm'),(6,'Tejas','3434','09-03-2023','04:23:18 pm'),(7,'Tejas','3434','09-03-2023','11:59:55 pm'),(8,'Mayur','mm90','10-03-2023','12:03:54 am'),(9,'Alita','hugo','10-03-2023','12:07:34 am'),(10,'Priya','priyak90','10-03-2023','03:34:27 pm'),(11,'Alita','hugo','10-03-2023','04:00:50 pm'),(12,'Tejas','3434','12-03-2023','02:52:00 pm'),(13,'Alita','hugo','21-03-2023','03:10:54 pm'),(14,'Alita','hugo','21-03-2023','03:14:27 pm'),(15,'Tejas','3434','21-03-2023','03:23:26 pm'),(16,'Alita','hugo','21-03-2023','03:47:56 pm'),(17,'Alita','hugo','21-03-2023','03:52:01 pm'),(18,'Tejas','3434','21-03-2023','03:56:19 pm'),(19,'Tejas','3434','21-03-2023','07:01:33 pm'),(20,'Alita','hugo','21-03-2023','07:04:01 pm'),(21,'Tejas','3434','26-03-2023','01:58:33 pm'),(22,'niraj','nijju','29-03-2023','12:05:13 pm'),(23,'Tejas','3434','29-03-2023','12:06:29 pm'),(24,'tejas','3434','29-03-2023','12:17:46 pm'),(25,'Tejas','3434','29-03-2023','12:24:29 pm'),(26,'Niraj','nijju','29-03-2023','12:40:40 pm'),(27,'tejas','3434','25-04-2023','10:53:18 am'),(28,'Tejas','3434','25-04-2023','01:20:17 pm'),(29,'Ambuja','12345','04-10-2023','09:32:48 pm'),(30,'Ambuja','12345','04-10-2023','11:00:26 pm'),(31,'Ambuja','12345','05-10-2023','01:43:33 pm');
+INSERT INTO `entries` VALUES (1,'Tejas','3434','09-03-2023','04:05:36 pm'),(2,'Priya','priyak90','09-03-2023','04:08:56 pm'),(3,'Alita','hugo','09-03-2023','04:17:07 pm'),(4,'Tejas','3434','09-03-2023','04:20:52 pm'),(5,'Priya','priyak90','09-03-2023','04:22:10 pm'),(6,'Tejas','3434','09-03-2023','04:23:18 pm'),(7,'Tejas','3434','09-03-2023','11:59:55 pm'),(8,'Mayur','mm90','10-03-2023','12:03:54 am'),(9,'Alita','hugo','10-03-2023','12:07:34 am'),(10,'Priya','priyak90','10-03-2023','03:34:27 pm'),(11,'Alita','hugo','10-03-2023','04:00:50 pm'),(12,'Tejas','3434','12-03-2023','02:52:00 pm'),(13,'Alita','hugo','21-03-2023','03:10:54 pm'),(14,'Alita','hugo','21-03-2023','03:14:27 pm'),(15,'Tejas','3434','21-03-2023','03:23:26 pm'),(16,'Alita','hugo','21-03-2023','03:47:56 pm'),(17,'Alita','hugo','21-03-2023','03:52:01 pm'),(18,'Tejas','3434','21-03-2023','03:56:19 pm'),(19,'Tejas','3434','21-03-2023','07:01:33 pm'),(20,'Alita','hugo','21-03-2023','07:04:01 pm'),(21,'Tejas','3434','26-03-2023','01:58:33 pm'),(22,'niraj','nijju','29-03-2023','12:05:13 pm'),(23,'Tejas','3434','29-03-2023','12:06:29 pm'),(24,'tejas','3434','29-03-2023','12:17:46 pm'),(25,'Tejas','3434','29-03-2023','12:24:29 pm'),(26,'Niraj','nijju','29-03-2023','12:40:40 pm'),(27,'tejas','3434','25-04-2023','10:53:18 am'),(28,'Tejas','3434','25-04-2023','01:20:17 pm'),(29,'Ambuja','12345','04-10-2023','09:32:48 pm'),(30,'Ambuja','12345','04-10-2023','11:00:26 pm'),(31,'Ambuja','12345','05-10-2023','01:43:33 pm'),(32,'ravindra','ravan','05-10-2023','10:09:32 pm'),(33,'ADMIN','9090','05-10-2023','10:38:35 pm'),(34,'ambuja','12345','05-10-2023','11:25:25 pm'),(35,'ambuja','12345','05-10-2023','11:26:51 pm'),(36,'ambuja','12345','06-10-2023','12:23:17 pm'),(37,'onkar','12345','06-10-2023','01:45:31 pm'),(38,'onkar','12345','06-10-2023','03:42:05 pm'),(39,'samiksha','samiksha','06-10-2023','04:06:46 pm');
 /*!40000 ALTER TABLE `entries` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ DROP TABLE IF EXISTS `products`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `products` (
   `name` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -78,7 +78,7 @@ CREATE TABLE `register` (
   `ADDRESS` varchar(255) DEFAULT NULL,
   `PINCODE` varchar(255) DEFAULT NULL,
   `PASSWORD` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -87,7 +87,7 @@ CREATE TABLE `register` (
 
 LOCK TABLES `register` WRITE;
 /*!40000 ALTER TABLE `register` DISABLE KEYS */;
-INSERT INTO `register` VALUES ('Tejas','tejaskapade@gmail.com','9892624891','HN.Mohone, Ambivali','421102','3434'),('Nano','nainishcoc@gmail.com','9822739121','Krishna Plaza, Mohone','421101','NANOCOC'),('Raadha','raadakrishna@gmail.com','90090099','Vrindaavan','14300','krishna'),('Alita','battleangel@gmail.com','8765489898','Iron city, street 365','3434','hugo'),('admin','admin@gmail.com','000000000','ADMIN','ADMIN','9090'),('Aniket','aniketpunase@gmail.com','8989898989','Muktainagar, Jalgaon','422333','punase'),('Priya','priyakapade@gmail.com','8657483959','HN, Panchashil Nagar, Mohone','421102','priyak90'),('Mayur','mayurmalkhede@gmail.com','83380999','Galegaon,Mohone','431123','mm90'),('Krishna','devkinandan@gmail.com','90909090','Golok dhaam, Vrindaavan','421124','raadha'),('Jayesh','hivarkar@gmail.com','998223111','Savantwaadi R1 road vapi, Gujraat','431111','golu'),('Niraj','niluu@gmail.com','9999999','Kongaon,kalyan','9000','nijju'),('Ambuja','ambujacement@gmail.com','9876543210','Bhoot Galli, Shamshaan ghat- Varanasi','987000','12345');
+INSERT INTO `register` VALUES ('Tejas','tejaskapade@gmail.com','9892624891','HN.Mohone, Ambivali','421102','3434'),('Nano','nainishcoc@gmail.com','9822739121','Krishna Plaza, Mohone','421101','NANOCOC'),('Raadha','raadakrishna@gmail.com','90090099','Vrindaavan','14300','krishna'),('Alita','battleangel@gmail.com','8765489898','Iron city, street 365','3434','hugo'),('admin','admin@gmail.com','000000000','ADMIN','ADMIN','9090'),('Aniket','aniketpunase@gmail.com','8989898989','Muktainagar, Jalgaon','422333','punase'),('Priya','priyakapade@gmail.com','8657483959','HN, Panchashil Nagar, Mohone','421102','priyak90'),('Mayur','mayurmalkhede@gmail.com','83380999','Galegaon,Mohone','431123','mm90'),('Krishna','devkinandan@gmail.com','90909090','Golok dhaam, Vrindaavan','421124','raadha'),('Jayesh','hivarkar@gmail.com','998223111','Savantwaadi R1 road vapi, Gujraat','431111','golu'),('Niraj','niluu@gmail.com','9999999','Kongaon,kalyan','9000','nijju'),('Ambuja','ambujacement@gmail.com','9876543210','Bhoot Galli, Shamshaan ghat- Varanasi','987000','12345'),('Ravindra','raviadabale@gmail.com','8976543122','RS. Mohone, Kalyan.','421104','ravan'),('Onkar','onkarmail@gmail.com','8879216339','Panvel','21212','12345'),('Samiksha','samikshagmail@gmail.com','868463558','Airoli','98989','samiksha');
 /*!40000 ALTER TABLE `register` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,7 +103,7 @@ CREATE TABLE `transaction` (
   `email` varchar(255) DEFAULT NULL,
   `items` varchar(255) DEFAULT NULL,
   `paid` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -112,7 +112,7 @@ CREATE TABLE `transaction` (
 
 LOCK TABLES `transaction` WRITE;
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
-INSERT INTO `transaction` VALUES ('Priya','priyakapade@gmail.com','2','116.98'),('Priya','priyakapade@gmail.com','2','75.58'),('Mayur','mayurmalkhede@gmail.com','2','269.10'),('Tejas','tejaskapade@gmail.com','9','1124.10'),('Tejas','tejaskapade@gmail.com','4','176.40'),('Alita','battleangel@gmail.com','6','372.60'),('Tejas','tejaskapade@gmail.com','6','621.00'),('niraj','niluu@gmail.com','2','180.00'),('Tejas','tejaskapade@gmail.com','3','349.20'),('tejas','tejaskapade@gmail.com','3','142.20'),('Tejas','tejaskapade@gmail.com','3','98.10'),('tejas','tejaskapade@gmail.com','3','331.20'),('Tejas','tejaskapade@gmail.com','4','1391.40'),('Ambuja','ambujacement@gmail.com','5','612.90'),('Ambuja','ambujacement@gmail.com','1','225.00');
+INSERT INTO `transaction` VALUES ('Priya','priyakapade@gmail.com','2','116.98'),('Priya','priyakapade@gmail.com','2','75.58'),('Mayur','mayurmalkhede@gmail.com','2','269.10'),('Tejas','tejaskapade@gmail.com','9','1124.10'),('Tejas','tejaskapade@gmail.com','4','176.40'),('Alita','battleangel@gmail.com','6','372.60'),('Tejas','tejaskapade@gmail.com','6','621.00'),('niraj','niluu@gmail.com','2','180.00'),('Tejas','tejaskapade@gmail.com','3','349.20'),('tejas','tejaskapade@gmail.com','3','142.20'),('Tejas','tejaskapade@gmail.com','3','98.10'),('tejas','tejaskapade@gmail.com','3','331.20'),('Tejas','tejaskapade@gmail.com','4','1391.40'),('Ambuja','ambujacement@gmail.com','5','612.90'),('Ambuja','ambujacement@gmail.com','1','225.00'),('ravindra','raviadabale@gmail.com','1','62.10'),('ambuja','ambujacement@gmail.com','2','81.90'),('ambuja','ambujacement@gmail.com','4','297.00'),('ambuja','ambujacement@gmail.com','4','297.00'),('onkar','onkarmail@gmail.com','3','162.00'),('samiksha','samikshagmail@gmail.com','5','504.90');
 /*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -125,4 +125,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-05 13:57:32
+-- Dump completed on 2023-10-06 19:17:47
