@@ -1,7 +1,7 @@
 <?php
   $dbHost = 'localhost:3306';
-$dbUsername = 'tejas';
-$dbPassword = 'ILOVEKRISHNA';
+$dbUsername = 'root';
+$dbPassword = '989878';
 $dbName = 'GROCERY';
 
 // Connect to the database
