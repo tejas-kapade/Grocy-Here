@@ -1,5 +1,5 @@
 <?php
-  $dbHost = 'localhost:3306';
+  $dbHost = 'grocy-database-service:3306';
 $dbUsername = 'root';
 $dbPassword = '989878';
 $dbName = 'GROCERY';
